@@ -3,7 +3,6 @@
                              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                              xmlns:local="clr-namespace:DataGrid_Themes"
                              xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-                             syncfusion:SfSkinManager.Theme="{syncfusion:SkinManagerExtension ThemeName=MaterialDark}"
                              Icon="App.ico"
                              Title="Getting Started"
                              WindowStartupLocation="CenterScreen">
@@ -33,8 +32,7 @@
                                        HeaderRowHeight="26"
                                        SelectionMode="Extended"
                                        ColumnSizer="Auto"
-                                       ItemsSource="{Binding EmployeeDetails}"
-                                       syncfusion:SkinManagerHelper.ScrollBarMode="Compact">
+                                       ItemsSource="{Binding EmployeeDetails}">
             <syncfusion:SfDataGrid.Columns>
                 <syncfusion:GridCheckBoxSelectorColumn  MappingName="Selected" AllowFiltering="False" Width="30"
                                                                 AllowSorting="False"   AllowCheckBoxOnHeader="True"/>

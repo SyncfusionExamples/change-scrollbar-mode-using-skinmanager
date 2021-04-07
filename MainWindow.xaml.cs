@@ -30,6 +30,7 @@ namespace DataGrid_Themes
     {
         public MainWindow()
         {
+            SfSkinManager.SetTheme(this, new Theme() { ThemeName = "MaterialDark", ScrollBarMode = ScrollBarMode.Compact });
             InitializeComponent();            
         }        
     }
